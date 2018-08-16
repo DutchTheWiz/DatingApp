@@ -1,0 +1,6 @@
+CD C:\VS\DatingApp\DatingApp.API
+dotnet watch run
+
+
+CD C:\VS\DatingApp\DatingApp-SPA
+ng serve
