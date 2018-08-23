@@ -29,6 +29,8 @@ namespace DatingApp.API.Controllers
         // [FromBody] here is not needed since [ApiController] above is used
         public async Task<IActionResult> Register([FromBody]UserForRegisterDto userForRegisterDto)
         {
+            //throw new Exception("Some error message from login");
+
             userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
 
             if (await _repo.UserExists(userForRegisterDto.Username))
@@ -55,6 +57,8 @@ namespace DatingApp.API.Controllers
         // [FromBody] here is not needed since [ApiController] above is used
         public async Task<IActionResult> Login([FromBody]UserForLoginDto userForLoginDto)
         {
+            throw new Exception("Some error message from login");
+
             var userFromRepo = await _repo.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password);
 
             if (userFromRepo == null)
