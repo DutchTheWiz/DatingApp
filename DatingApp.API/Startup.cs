@@ -61,7 +61,7 @@ namespace DatingApp.API
             }
             else
             {   // to make error handling global
-                // no need for ty/catch in every page
+                // no need for try/catch in every procedure
                 app.UseExceptionHandler(builder =>
                 {
                     builder.Run(async context =>
