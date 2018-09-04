@@ -1,7 +1,7 @@
 CD C:\VS\DatingApp\DatingApp.API
 dotnet watch run
 
-dotnet ef migrations add AddedUserEntity
+dotnet ef migrations add ExtendedUserClass
 dotnet ef database update
 
 
