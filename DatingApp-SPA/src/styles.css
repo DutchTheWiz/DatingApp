@@ -4,3 +4,6 @@
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+
+/* custom styles from css file here instead of individual classes in lesson */
+@import 'tabsetstyles.css';
